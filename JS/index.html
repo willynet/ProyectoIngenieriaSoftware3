@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+    <title >Page title</title>
+    <link rel="stylesheet" href="css/basic.css"/>
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header id="cabezera">
+        <h1 id="title">Page title</h1>
+    </header>
+    
+        <!-- Navegacion -->
+        <nav>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Documentos</a></li>
+                <li><a href="#">Contactenos</a></li>
+                <li class="subscribe"><a href="#">Subscribe via. RSS</a></li>
+            </ul>
+        </nav>
+    
+    <section id="intro">
+        <!-- Introduccion -->
+            <header>
+                <h2>Titulo Introduccion</h2>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+            <img src="img/intro_flower.png" alt="Flower">
+    </section>
+
+    <div id="content">
+        <div id="mainContent">
+        
+            <!-- Area Principal de conteido -->
+            <section>
+                <!-- Publicacion o Post. -->
+                <article class="blogPost">
+                        <header>
+                            <h2>Tiulo de un POST</h2>
+                            <p>Posteado en  <time datetime="2009-06-29T23:31:45+01:00">Junio 29th 2009</time> por <a href="#">Anfho</a> - <a href="#comments">3 comentarios</a></p>
+                        </header>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam recusandae atque architecto tempore sit minima deserunt! Libero cum sapiente tempore ut omnis quisquam officiis possimus minus obcaecati id aut pariatur, nobis officia quas optio fugit ipsa, ex error vel quaerat harum nemo. Dolorum aliquid suscipit debitis placeat, impedit ratione optio.. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, debitis. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit magni hic delectus ab nulla doloremque nihil deserunt nemo, sed ipsa. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis illo recusandae iusto, enim cum, voluptatum reprehenderit at laborum libero veniam.</p>
+                        </div>
+                </article>
+            </section>
+            <section id="comments">
+                  <header>
+                      <h3>Comments</h3>
+                  </header>
+                  <article>
+                      <header>
+                          <a href="#">George Washington</a> on <time datetime="2009-06-29T23:35:20+01:00">June 29th 2009 at 23:35</time>
+                      </header>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                  </article>
+                  <article>
+                      <header>
+                          <a href="#">Benjamin Franklin</a> on <time datetime="2009-06-29T23:40:09+01:00">June 29th 2009 at 23:40</time>
+                      </header>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                  </article>
+            </section>
+            <form id="form" action="#" method="post"> <!-- Formulario para enviar comentarios sobre el post.-->
+                <h3>Enviar un comentario</h3>
+                <p>
+                    <label for="name">Nombre</label>
+                    <input name="name" id="name" type="text" required />
+                </p>
+                <p>
+                    <label for="email">Correo</label>
+                    <input name="email" id="email" type="email" required />
+                </p>
+                <p>
+                    <label for="website">Website</label>
+                    <input name="website" id="website" type="url" />
+                </p>
+                <p>
+                    <label for="comment">Comentario</label>
+                    <textarea name="comment" id="comment" required></textarea>
+                </p>
+                <p><input id="boton" type="submit" value="Post comment" /></p>
+            </form>
+        </div>
+        <aside>
+            <!-- Barra lateral -->
+
+            <section>
+                <header>
+                    <h3>Lroem</h3>
+                </header>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Sit amet consectetur</a></li>
+                    <li><a href="#">Adipisicing elit sed</a></li>
+                    <li><a href="#">Do eiusmod tempor</a></li>
+                    <li><a href="#">Incididunt ut labore</a></li>
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h3>Lroem</h3>
+                </header>
+                <ul>
+                    <li><a href="#">Lorem ipsum.</a></li>
+                    <li><a href="#">Lorem ipsum.</a></li>
+                    <li><a href="#">Lorem ipsum.</a></li>
+                    <li><a href="#">Lorem ipsum.</a></li>
+                    <li><a href="#">Lorem ipsum.</a></li>
+                    <li><a href="#">Lorem ipsum.</a></li>
+                    <li><a href="#">Lorem ipsum.</a></li>
+                </ul>
+            </section>
+        
+        </aside>
+    </div>
+
+    <footer>
+        <!-- Footer -->
+
+        <div>
+            <section id="about">
+                <header>
+                    <h3>Sobre</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <a href="#">laboris nisi ut aliquip</a> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section id="blogroll">
+                <header>
+                    <h3>Lorem.</h3>
+                </header>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                </ul>
+            </section>
+            <section id="popular">
+                <header>
+                    <h3>Popular</h3>
+                </header>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+            </section>
+        </div>
+    
+    </footer>
+ <script type="text/javascript" src="js/nuevo.js"></script>
+</body>
+</html>
